@@ -14,17 +14,17 @@
 		<meta name="author" content="Your Name Here">
 		<meta name="Copyright" content="Copyright Your Name Here 2011. All Rights Reserved.">
 
-		<link rel="stylesheet" href="_/css/style.css">
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="_/css/default.css">
+		<link rel="stylesheet" href="../_/css/style.css">
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../_/css/default.css">
 
-		<script src="_/js/modernizr-1.7.min.js"></script>
+		<script src="../_/js/modernizr-1.7.min.js"></script>
 	</head>
 
 	<body>
 		<div class="page-header">
 			<div class="container">
-				<h1><a href="index.html">Blog name</a> <small>blog slogan</small></h1>
+				<h1><a href="../index.html">Blog name</a> <small>blog slogan</small></h1>
 			</div>
 		</div>
 
@@ -38,7 +38,8 @@
 								<th>Article Name</th>
 								<th>Author</th>
 								<th>Added</th>
-								<th>Delete</th>
+								<th class="span2">Delete</th>
+								<th class="span2">Manage Comments</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -46,17 +47,21 @@
 								<td><a href="article-edit.html">Článek 1</a> </td>
 								<td>Jakub Heyduk</td>
 								<td>4.1 2013</td>
-								<td><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></td>
+								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
+								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>
+							</tr>
 							<tr>
 								<td><a href="article-edit.html">Článek 2</a> </td>
 								<td>Jakub Heyduk</td>
 								<td>4.1 2013</td>
-								<td><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></td>
+								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
+								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>							</tr>
 							<tr>
 								<td><a href="article-edit.html">Článek 3</a> </td>
 								<td>Jakub Heyduk</td>
 								<td>4.1 2013</td>
-								<td><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></td>
+								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
+								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>							</tr>
 
 						</tbody>
 					</table>
@@ -72,11 +77,11 @@
 				<p><strong>(c) 2012 - 2013 Jakub Heyduk</strong></p>
 				<ul>
 					<li class="disabled">
-						<a href="index.html">Homepage</a>
+						<a href="../index.html">Homepage</a>
 					</li>
 					<li class="muted">·</li>
 					<li>
-						<a href="archive.html">Archive</a>
+						<a href="../archive.html">Archive</a>
 					</li>
 					<li class="muted">·</li>
 					<li>
@@ -88,8 +93,8 @@
 			</div>
 		</div>
 
-		<script src="_/js/jquery-1.8.3.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="_/js/functions.js"></script>
+		<script src="../_/js/jquery-1.8.3.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../_/js/functions.js"></script>
 	</body>
 </html>
