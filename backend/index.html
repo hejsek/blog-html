@@ -17,59 +17,129 @@
 		<link rel="stylesheet" href="../_/css/style.css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../_/css/default.css">
+		<link rel="stylesheet" href="../_/css/backend.css">
 
 		<script src="../_/js/modernizr-1.7.min.js"></script>
 	</head>
 
 	<body>
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">Administration</a>
+					<ul class="nav">
+						<li><a href="#">Users</a></li>
+						<li class="active">
+							<a href="#">Articles</a>
+						</li>
+					</ul>
 
-		<div class="page-header">
-			<div class="container">
-				<div class="nav-collapse collapse">
-					<p class="navbar-text pull-right">
-						Logged in as
-						<a class="navbar-link text-info" href="#">Username</a>
-					</p>
+					<ul class="nav pull-right">
+						<li class="middle">Logged as</li>
+						<li class="dropdown left">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Jakub Heydůček
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Change password</a>
+								</li>
+								<li>
+									<a href="#">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-				<h1><a href="../index.html">Blog name</a> <small>blog slogan</small></h1>
 			</div>
 		</div>
 
-		<div class="container pagination-centered">
-				<div class="content ">
+		<div class="container">
+				<div class="content">
+					<h1>Articles</h1>
 
-					<table class="table table-hover list table-bordered">
+					<table class="table table-hover table-bordered">
 						<thead>
-							<h2>Articles</h2>
 							<tr>
 								<th>Article Name</th>
 								<th>Author</th>
 								<th>Added</th>
-								<th class="span2">Delete</th>
-								<th class="span2">Manage Comments</th>
+								<th>Action</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td><a href="article-edit.html">Článek 1</a> </td>
+								<td>Článek 1</td>
 								<td>Jakub Heyduk</td>
 								<td>4.1 2013</td>
-								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
-								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>
+								<td>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-eye-open"></i>
+										View
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-pencil"></i>
+										Edit
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-trash"></i>
+										Delete
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-edit"></i>
+										Comments
+									</a>
+								</td>
 							</tr>
-							<tr>
-								<td><a href="article-edit.html">Článek 2</a> </td>
-								<td>Jakub Heyduk</td>
-								<td>4.1 2013</td>
-								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
-								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>							</tr>
-							<tr>
-								<td><a href="article-edit.html">Článek 3</a> </td>
-								<td>Jakub Heyduk</td>
-								<td>4.1 2013</td>
-								<td><a href="#"><button class="btn btn-mini btn-danger">Delete<i class="icon-trash icon-black"></i></button></a></td>
-								<td><a href="#"><button class="btn btn-mini" href="comments">Edit Comments<i class="icon-edit"></i></button></a></td>							</tr>
 
+							<tr>
+								<td>Článek 1</td>
+								<td>Jakub Heyduk</td>
+								<td>4.1 2013</td>
+								<td>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-eye-open"></i>
+										View
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-pencil"></i>
+										Edit
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-trash"></i>
+										Delete
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-edit"></i>
+										Comments
+									</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Článek 1</td>
+								<td>Jakub Heyduk</td>
+								<td>4.1 2013</td>
+								<td>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-eye-open"></i>
+										View
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-pencil"></i>
+										Edit
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-trash"></i>
+										Delete
+									</a>
+									<a href="#" class="btn btn-mini" target="_blank">
+										<i class="icon-edit"></i>
+										Comments
+									</a>
+								</td>
+							</tr>
 						</tbody>
 					</table>
 					<ul class="pager">
@@ -81,20 +151,6 @@
 
 		<div class="footer">
 			<div class="container">
-				<p><strong>(c) 2012 - 2013 Jakub Heyduk</strong></p>
-				<ul>
-					<li class="disabled">
-						<a href="../index.html">Homepage</a>
-					</li>
-					<li class="muted">·</li>
-					<li>
-						<a href="../archive.html">Archive</a>
-					</li>
-					<li class="muted">·</li>
-					<li>
-						<a href="#">RSS</a>
-					</li>
-				</ul>
 				<p>Powered by <a href="http://nette.org">Nette Framework</a> and <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
 				<p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
 			</div>

@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Homepage</title>
+		<title>Comments Editor</title>
 		<meta name="title" content="">
 		<meta name="description" content="">
 		<meta name="author" content="Your Name Here">
@@ -17,51 +17,138 @@
 		<link rel="stylesheet" href="../_/css/style.css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../_/css/default.css">
+		<link rel="stylesheet" href="../_/css/backend.css">
 
 		<script src="../_/js/modernizr-1.7.min.js"></script>
 	</head>
 
 	<body>
-		<div class="page-header">
-			<div class="container">
-				<div class="nav-collapse collapse">
-					<p class="navbar-text pull-right">
-						Logged in as
-						<a class="navbar-link text-info" href="#">Username</a>
-					</p>
+
+		<div class="navbar navbar-static-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">Administration</a>
+					<ul class="nav">
+						<li><a href="#">Users</a></li>
+						<li class="active">
+							<a href="#">Articles</a>
+						</li>
+					</ul>
+
+					<ul class="nav pull-right">
+						<li class="middle">Logged as</li>
+						<li class="dropdown left">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								Jakub Heydůček
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Change password</a>
+								</li>
+								<li>
+									<a href="#">Logout</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-				<h1><a href="../index.html">Blog name</a> <small>blog slogan</small></h1>
 			</div>
 		</div>
-		<div class="container well table-hover list table-bordered">
-			<h2>Comments manager</h2>
-			<table class="table">
-				<thead>
-					<th>Author</th>
-					<th>Article</th>
-					<th>Date</th>
-					<th>Email</th>
-					<th>IP</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td><a href="#">Tomáš Kolinger</a></td>
-						<td><a href="#">Článek 1</a></td>
-						<td><a href="#">23.7 2012</a></td>
-						<td><a href="#">tomas@kolinger.name</a></td>
-						<td class="text-error"><a href="#">84.21.5.71</a></td>
-					</tr>
-					<tr>
-						<td><a href="#">Tomáš Kolinger</a></td>
-						<td><a href="#">Článek 1</a></td>
-						<td><a href="#">23.7 2012</a></td>
-						<td><a href="#">tomas@kolinger.name</a></td>
-						<td><a href="#">84.21.5.71</a></td>
-					</tr>
-				</tbody>
-			</table>
 
+		<!-- Modal -->
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Comment from Tomáš Kolinger</h3>
+			</div>
+			<div class="modal-body">
+				<p>Lorem Ipsum blablablalblalbal</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			</div>
 		</div>
 
+		<div class="container">
+			<div class="content">
+				<h1><a href="#"> Článek 1</a> - comments</h1>
+
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Author</th>
+							<th>Content</th>
+							<th>Added</th>
+							<th>IP</th>
+							<th>Email</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Jakub Heyduk</td>
+							<td>Lorem ipsum blablablabla...</td>
+							<td>4.1 2013</td>
+							<td>85.21.47.5</td>
+							<td>tomas@kolinger.name</td>
+							<td>
+								<a href="#" class="btn btn-mini" target="_blank">
+									<i class="icon-trash"></i>
+									Delete
+								</a>
+								<a href="#myModal" role="button" class="btn btn-mini icon" data-toggle="modal"><i class="icon-pencil"></i>Show more..</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Jakub Heyduk</td>
+							<td>Lorem ipsum blablablabla...</td>
+							<td>4.1 2013</td>
+							<td>85.21.47.5</td>
+							<td>tomas@kolinger.name</td>
+							<td>
+								</a>
+								<a href="#" class="btn btn-mini" target="_blank">
+									<i class="icon-trash"></i>
+									Delete
+								</a>
+								<a href="#myModal" role="button" class="btn btn-mini icon" data-toggle="modal"><i class="icon-pencil"></i>Show more..</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Jakub Heyduk</td>
+							<td>Lorem ipsum blablablabla...</td>
+							<td>4.1 2013</td>
+							<td>85.21.47.5</td>
+							<td>tomas@kolinger.name</td>
+							<td>
+								<a href="#" class="btn btn-mini" target="_blank">
+									<i class="icon-trash"></i>
+									Delete
+								</a>
+								<a href="#myModal" role="button" class="btn btn-mini icon" data-toggle="modal"><i class="icon-pencil"></i>Show more..</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="pager">
+					<li class="previous disabled"><a href="#">Previous</a> </li>
+					<li class="next disabled"><a href="#">Next</a> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p>Powered by <a href="http://nette.org">Nette Framework</a> and <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
+				<p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+			</div>
+		</div>
+
+		<script src="../_/js/jquery-1.8.3.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script src="../_/js/functions.js"></script>
 	</body>
 </html>
